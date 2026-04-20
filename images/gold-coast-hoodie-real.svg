@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#141414" />
+  <rect x="140" y="130" width="440" height="460" rx="38" fill="#252525" />
+  <path d="M220 180 Q360 80 500 180" stroke="#c6a34d" stroke-width="24" fill="none" />
+  <text x="360" y="620" text-anchor="middle" fill="#c6a34d" font-size="40" font-family="Arial, sans-serif">REAL PRODUCT</text>
+</svg>

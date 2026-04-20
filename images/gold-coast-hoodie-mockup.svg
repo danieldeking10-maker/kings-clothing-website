@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#1c1c1c" />
+  <rect x="112" y="120" width="496" height="448" rx="40" fill="#2d2d2d" />
+  <path d="M200 180 L280 120 H440 L520 180" stroke="#d4b64b" stroke-width="28" fill="none" />
+  <text x="50%" y="660" text-anchor="middle" fill="#d4b64b" font-size="40" font-family="Arial, sans-serif">GOLD COAST</text>
+</svg>

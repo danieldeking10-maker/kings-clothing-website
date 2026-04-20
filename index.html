@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kings Clothing Brand</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">KINGS CLOTHING</div>
+      <nav class="menu">
+        <a href="index.html">Shop</a>
+        <a href="agent.html">Become an Agent</a>
+        <a href="checkout.html" class="cart-link">Cart 🛒 <span id="cartCount" class="cart-count">0</span></a>
+        <a href="signin.html" class="auth-link">Sign In</a>
+        <a href="signup.html" class="auth-link">Sign Up</a>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Premium Streetwear. Locally Crafted.</p>
+        <h1>Take Control of Your Look with Kings Clothing.</h1>
+        <p>Heavyweight GSM options, premium finishes, and a brand built for hustlers.</p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Shop Our Best Sellers</a>
+          <a href="agent.html" class="btn btn-secondary">Join the Kingdom</a>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <div class="hero-overlay">ACID WASH TOP</div>
+      </div>
+    </section>
+
+    <section class="search-bar-section">
+      <div class="search-row">
+        <input id="searchInput" class="search-input" type="search" placeholder="Search by design name, category, or agent name..." />
+        <select id="gsmFilter" class="select-field">
+          <option value="all">Filter by GSM</option>
+          <option value="230">230 GSM</option>
+          <option value="260">260 GSM</option>
+          <option value="320">320 GSM</option>
+        </select>
+        <select id="sortSelect" class="select-field">
+          <option value="default">Sort by</option>
+          <option value="gsmAsc">GSM: Low to High</option>
+          <option value="gsmDesc">GSM: High to Low</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="catalog" class="trending-section">
+      <div class="section-heading">
+        <h2>Trending Designs</h2>
+        <p>Mockups first. Real photos inside the product pages.</p>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-card">
+        <h2>Join the Kingdom</h2>
+        <p>Earn 10% commission on every sale plus 10% profit share for approved design uploads.</p>
+        <ul>
+          <li>Transparent payout via Mobile Money</li>
+          <li>Referral tools included</li>
+          <li>Real agent dashboard with stats</li>
+        </ul>
+        <a href="agent.html" class="btn btn-primary">Sign Up as Agent</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <p>Questions? Message us on WhatsApp anytime.</p>
+        <a href="mailto:hello@kingsclothinggh.com">hello@kingsclothinggh.com</a>
+      </div>
+      <div class="footer-right">
+        <p>MoMo payment confirmation:</p>
+        <p><strong>053 471 6125</strong></p>
+        <p>Send payment reference with your Order ID.</p>
+      </div>
+    </footer>
+  </div>
+
+  <a href="https://wa.me/233534716125" class="whatsapp-float" target="_blank" rel="noreferrer">WhatsApp</a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#0d0d0d" />
+  <path d="M220 220 C260 140 460 140 500 220 L500 420 C460 500 260 500 220 420 Z" fill="#363636" />
+  <circle cx="360" cy="320" r="80" fill="#e8e2d3" />
+  <text x="360" y="620" text-anchor="middle" fill="#e8e2d3" font-size="36" font-family="Arial, sans-serif">REAL TOP</text>
+</svg>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Kings Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell auth-shell">
+    <header class="site-header">
+      <div class="brand">KINGS CLOTHING</div>
+      <nav class="menu">
+        <a href="index.html">Shop</a>
+        <a href="signin.html">Sign In</a>
+        <a href="agent.html">Agent</a>
+      </nav>
+    </header>
+
+    <main class="auth-page">
+      <section class="auth-card">
+        <h1>Create Account</h1>
+        <p>Join as a customer or agent and start earning with Kings Clothing.</p>
+        <form>
+          <label for="signupName">Full Name</label>
+          <input id="signupName" type="text" placeholder="John Doe" required />
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" type="email" placeholder="you@kingsclothinggh.com" required />
+          <label for="signupPhone">Mobile Money</label>
+          <input id="signupPhone" type="tel" placeholder="053 471 6125" />
+          <label for="signupPassword">Password</label>
+          <input id="signupPassword" type="password" placeholder="••••••••" required />
+          <button class="btn btn-primary" type="submit">Sign Up</button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="signin.html">Sign in</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

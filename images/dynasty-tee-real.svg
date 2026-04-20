@@ -1,0 +1,7 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#0f0f0f" />
+  <circle cx="360" cy="260" r="200" fill="#1f1f1f" />
+  <path d="M260 360 Q360 460 460 360" stroke="#e6b700" stroke-width="20" fill="none" stroke-linecap="round" />
+  <path d="M240 300 Q360 200 480 300" stroke="#e6b700" stroke-width="20" fill="none" stroke-linecap="round" />
+  <text x="360" y="620" text-anchor="middle" fill="#e6b700" font-size="40" font-family="Arial, sans-serif">STUDIO SHOOT</text>
+</svg>

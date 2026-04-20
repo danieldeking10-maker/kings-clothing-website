@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#121212" />
+  <ellipse cx="360" cy="360" rx="260" ry="120" fill="#252525" />
+  <path d="M180 360 Q360 260 540 360" stroke="#ffffff" stroke-width="26" fill="none" />
+  <text x="360" y="640" text-anchor="middle" fill="#ffffff" font-size="36" font-family="Arial, sans-serif">BLACK SNAPBACK</text>
+</svg>

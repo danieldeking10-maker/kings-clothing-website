@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product - Kings Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">KINGS CLOTHING</div>
+      <nav class="menu">
+        <a href="index.html">Shop</a>
+        <a href="agent.html">Become an Agent</a>
+        <a href="checkout.html" class="cart-link">Cart 🛒 <span id="cartCount" class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main class="product-page">
+      <section class="product-hero">
+        <div class="product-media" id="productDetailSection">
+          <div class="product-photo real-photo active" id="realPhoto">
+            <img id="productRealImage" src="images/dynasty-tee-real.svg" alt="Product real photo" />
+          </div>
+          <div class="product-photo mockup-photo" id="mockupPhoto">
+            <img id="productMockupImage" src="images/dynasty-tee-mockup.svg" alt="Product mockup image" />
+          </div>
+          <div class="toggle-buttons">
+            <button id="showRealBtn" class="btn btn-secondary active">View Real Photo</button>
+            <button id="showMockupBtn" class="btn btn-secondary">View Mockup</button>
+          </div>
+        </div>
+
+        <aside class="product-info">
+          <p class="eyebrow" id="productCategory">T-Shirt</p>
+          <h1 id="productTitle">The Dynasty Tee</h1>
+          <p class="price-label">Price: <span id="productPrice">GHC 180.00</span></p>
+          <p class="product-tagline" id="productLabel">Acid Wash Tee</p>
+          <p class="product-description" id="productDescription">Choose your GSM quality and size, then secure your order with our split payment system. All products are locally crafted with premium streetwear standards.</p>
+          <div class="config-field">
+            <label for="gsmSelect">Fabric Quality (GSM)</label>
+            <select id="gsmSelect"></select>
+          </div>
+          <div class="config-field colors-field">
+            <label>Color</label>
+            <div class="swatches" id="colorSwatches"></div>
+          </div>
+          <div class="config-field">
+            <label for="sizeSelect">Size</label>
+            <select id="sizeSelect"></select>
+          </div>
+
+          <div class="product-actions">
+            <a href="checkout.html" class="btn btn-primary">Buy Now</a>
+            <button class="btn btn-secondary" id="addToCartBtn">Add to Cart</button>
+          </div>
+          <div class="trust-bar">
+            <p>Trust Bar</p>
+            <p>50% Pay Now, 50% on Delivery.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <a href="https://wa.me/233534716125" class="whatsapp-float" target="_blank" rel="noreferrer">WhatsApp</a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

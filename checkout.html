@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Kings Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">KINGS CLOTHING</div>
+      <nav class="menu">
+        <a href="index.html">Shop</a>
+        <a href="agent.html">Become an Agent</a>
+        <a href="signin.html" class="auth-link">Sign In</a>
+        <a href="checkout.html" class="cart-link">Cart 🛒 <span id="cartCount" class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main class="checkout-page">
+      <section id="checkoutCart" class="checkout-summary">
+        <h1>Checkout</h1>
+        <p>Your cart contents are shown below. Confirm your deposit instructions when ready.</p>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="price-card">
+          <div>
+            <span>Cart Total</span>
+            <strong id="totalPrice">GHC 0.00</strong>
+          </div>
+          <div>
+            <span>Due Today (50%)</span>
+            <strong id="depositPrice">GHC 0.00</strong>
+          </div>
+          <div>
+            <span>Due on Completion</span>
+            <strong id="balancePrice">GHC 0.00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="payment-instructions">
+        <p class="alert-icon">⚠️ TO CONFIRM YOUR ORDER:</p>
+        <ol>
+          <li>Send the due amount to Mobile Money: <strong>0534716125</strong>.</li>
+          <li>Reference: Use your Order ID <strong>#12345</strong>.</li>
+          <li>Click "I Have Paid" below to notify us.</li>
+        </ol>
+        <button id="paidButton" class="btn btn-primary">I Have Paid</button>
+        <a class="whatsapp-button" href="https://wa.me/233534716125" target="_blank" rel="noreferrer">Message Proof of Payment on WhatsApp</a>
+      </section>
+    </main>
+  </div>
+
+  <a href="https://wa.me/233534716125" class="whatsapp-float" target="_blank" rel="noreferrer">WhatsApp</a>
+</body>
+</html>

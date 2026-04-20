@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#181818" />
+  <rect x="180" y="220" width="360" height="240" rx="34" fill="#2c2c2c" />
+  <path d="M220 240 L500 240 L440 420 L280 420 Z" fill="#e8e2d3" opacity="0.92" />
+  <text x="360" y="620" text-anchor="middle" fill="#e8e2d3" font-size="36" font-family="Arial, sans-serif">CROP TOP</text>
+</svg>

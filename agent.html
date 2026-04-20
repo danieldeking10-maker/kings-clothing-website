@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Portal - Kings Clothing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">KINGS CLOTHING</div>
+      <nav class="menu">
+        <a href="index.html">Shop</a>
+        <a href="product.html">Product</a>
+        <a href="checkout.html" class="cart-link">Cart 🛒 <span id="cartCount" class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main class="agent-page">
+      <section class="agent-hero">
+        <div>
+          <h1>Agent Dashboard</h1>
+          <p>Track sales, payouts, referrals, and design status in one place.</p>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <p>Total Sales</p>
+          <h2>GHC 13,400</h2>
+        </div>
+        <div class="stat-card">
+          <p>Commission Earned</p>
+          <h2>GHC 1,340</h2>
+        </div>
+        <div class="stat-card">
+          <p>Designs Approved</p>
+          <h2>14</h2>
+        </div>
+      </section>
+
+      <section class="toolbox-card">
+        <h2>Toolbox</h2>
+        <p>Share your agent link and grow your sales with your network.</p>
+        <div class="referral-box">
+          <input id="referralLink" type="text" readonly value="https://kingsclothinggh.com/?ref=YOURCODE" />
+          <button id="copyReferralBtn" class="btn btn-primary">Copy My Referral Link</button>
+        </div>
+      </section>
+
+      <section class="design-studio">
+        <div>
+          <h2>Design Studio</h2>
+          <p>Upload original artwork and move it through AI verification to live shop status.</p>
+        </div>
+        <form id="designUploadForm" class="upload-form">
+          <label for="designTitle">Design Title</label>
+          <input id="designTitle" type="text" placeholder="E.g. Accra Hustle Edition" required />
+          <label for="designFile">Upload JPG / PNG</label>
+          <input id="designFile" type="file" accept="image/png, image/jpeg" required />
+          <button type="submit" class="btn btn-secondary">Upload Design</button>
+        </form>
+        <div class="status-panel">
+          <p>Upload Status</p>
+          <div id="uploadStatus" class="status-bar">Waiting for upload...</div>
+        </div>
+      </section>
+
+      <section class="payout-card">
+        <h2>Payouts</h2>
+        <p>Enter the MoMo number where commissions will be sent.</p>
+        <form class="payout-form">
+          <label for="momoNumber">Mobile Money Number</label>
+          <input id="momoNumber" type="tel" placeholder="053 471 6125" />
+          <button class="btn btn-primary" type="button">Save Payout Number</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <a href="https://wa.me/233534716125" class="whatsapp-float" target="_blank" rel="noreferrer">WhatsApp</a>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "slug": "dynasty-tee",
+    "name": "The Dynasty Tee",
+    "category": "T-Shirt",
+    "agent": "KingAgent",
+    "gsm": 320,
+    "price": 180,
+    "label": "Acid Wash Tee",
+    "description": "A heavyweight 320 GSM acid wash tee with premium streetwear fit and bold branding.",
+    "mockupImage": "images/dynasty-tee-mockup.svg",
+    "realImage": "images/dynasty-tee-real.svg",
+    "colors": ["#111111", "#d6d6d6", "#6e4b2f"],
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 2,
+    "slug": "gold-coast-hoodie",
+    "name": "Gold Coast Hoodie",
+    "category": "Hoodie",
+    "agent": "QueenBee",
+    "gsm": 260,
+    "price": 250,
+    "label": "Streetwear Hoodie",
+    "description": "Soft 260 GSM brushed fleece with a clean gold-accented design for premium comfort.",
+    "mockupImage": "images/gold-coast-hoodie-mockup.svg",
+    "realImage": "images/gold-coast-hoodie-real.svg",
+    "colors": ["#222222", "#c6a34d", "#444444"],
+    "sizes": ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 3,
+    "slug": "black-snapback",
+    "name": "Black Snapback",
+    "category": "Caps",
+    "agent": "CrownCrew",
+    "gsm": 0,
+    "price": 115,
+    "label": "Signature Snapback",
+    "description": "One-size-fits-all snapback with bold embroidery and adjustable comfort fit.",
+    "mockupImage": "images/black-snapback-mockup.svg",
+    "realImage": "images/black-snapback-real.svg",
+    "colors": ["#111111", "#333333"],
+    "sizes": ["OSFA"]
+  },
+  {
+    "id": 4,
+    "slug": "320gsm-crop-top",
+    "name": "320 GSM Crop Top",
+    "category": "Crop Top",
+    "agent": "HustleWear",
+    "gsm": 320,
+    "price": 180,
+    "label": "Ladies Structured Crop",
+    "description": "Premium structured crop top built with heavyweight 320 GSM fabric for a sharp silhouette.",
+    "mockupImage": "images/crop-top-mockup.svg",
+    "realImage": "images/crop-top-real.svg",
+    "colors": ["#e8e2d3", "#191919"],
+    "sizes": ["S", "M", "L"]
+  }
+]

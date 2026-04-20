@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#080808" />
+  <ellipse cx="360" cy="370" rx="240" ry="110" fill="#1a1a1a" />
+  <path d="M220 360 Q360 260 500 360" stroke="#25d366" stroke-width="18" fill="none" />
+  <text x="360" y="620" text-anchor="middle" fill="#25d366" font-size="36" font-family="Arial, sans-serif">REAL CAP</text>
+</svg>

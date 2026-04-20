@@ -1,0 +1,14 @@
+{
+  "name": "kings-clothing-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "import-products": "node importProducts.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.4",
+    "firebase-admin": "^12.1.0"
+  }
+}

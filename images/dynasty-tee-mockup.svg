@@ -1,0 +1,6 @@
+<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="#111" />
+  <rect x="80" y="120" width="560" height="480" rx="34" fill="#222" />
+  <path d="M180 220 C240 150 480 150 540 220 L540 460 C480 530 240 530 180 460 Z" fill="#c1a25d" opacity="0.9" />
+  <text x="50%" y="640" text-anchor="middle" fill="#f7f1d3" font-size="40" font-family="Arial, sans-serif">DYNASTY TEE</text>
+</svg>
