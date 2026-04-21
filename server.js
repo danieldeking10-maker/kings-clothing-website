@@ -11,7 +11,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 const staticDir = path.join(__dirname);
 
+// Serve static files
 app.use(express.static(staticDir));
+
+// Serve index.html for the root route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(staticDir, 'index.html'));
+});
 
 let db = null;
 let useFirestore = false;
