@@ -255,10 +255,38 @@ function loadProductDetail() {
     productRealImage.alt = `${product.name} real photo`;
   }
 
+  // Populate GSM select based on product
+  if (gsmSelect) {
+    const gsmOptions = product.gsm > 0 
+      ? [{ value: product.gsm, label: `${product.gsm} GSM (Standard)` }]
+      : [{ value: 0, label: 'Standard' }];
+    
+    // Add other common GSM options if applicable
+    if (product.category === 'T-Shirt' || product.category === 'Hoodie' || product.category === 'Crop Top') {
+      const commonGsms = [230, 260, 320].filter(g => g !== product.gsm);
+      commonGsms.forEach(g => {
+        gsmOptions.push({ value: g, label: `${g} GSM` });
+      });
+    }
+    
+    gsmSelect.innerHTML = gsmOptions
+      .map((opt) => `<option value="${opt.value}">${opt.label}</option>`)
+      .join('');
+  }
+
+  // Populate color swatches with selection functionality
   if (colorSwatches) {
     colorSwatches.innerHTML = product.colors
-      .map((color) => `<button class="color-swatch" style="background:${color}"></button>`)
+      .map((color, index) => `<button class="color-swatch${index === 0 ? ' selected' : ''}" style="background:${color}" data-color="${color}"></button>`)
       .join('');
+    
+    colorSwatches.addEventListener('click', (e) => {
+      const swatch = e.target.closest('.color-swatch');
+      if (swatch) {
+        colorSwatches.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('selected'));
+        swatch.classList.add('selected');
+      }
+    });
   }
 
   if (sizeSelect) {
@@ -267,6 +295,16 @@ function loadProductDetail() {
 
   if (addToCartBtn) {
     addToCartBtn.onclick = () => addToCart(product.id);
+  }
+
+  // Handle Buy Now button - add to cart and redirect
+  const buyNowBtn = document.querySelector('.product-actions .btn-primary');
+  if (buyNowBtn) {
+    buyNowBtn.onclick = (e) => {
+      e.preventDefault();
+      addToCart(product.id);
+      window.location.href = 'checkout.html';
+    };
   }
 }
 
@@ -387,6 +425,38 @@ function initializePage() {
       mockupPhoto.classList.add('active');
       showRealBtn.classList.remove('active');
       showMockupBtn.classList.add('active');
+    });
+  }
+
+  // Handle sign in form
+  const signinForm = document.querySelector('.auth-card form');
+  const signinEmail = document.getElementById('signinEmail');
+  if (signinForm && signinEmail) {
+    signinForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Sign in functionality coming soon. Contact us on WhatsApp for assistance.', 'default');
+    });
+  }
+
+  // Handle sign up form
+  const signupName = document.getElementById('signupName');
+  if (signinForm && signupName) {
+    signinForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showToast('Account registration coming soon. Contact us on WhatsApp to become an agent.', 'default');
+    });
+  }
+
+  // Handle payout form save
+  const payoutSaveBtn = document.querySelector('.payout-form .btn-primary');
+  if (payoutSaveBtn) {
+    payoutSaveBtn.addEventListener('click', () => {
+      const momoNumber = document.getElementById('momoNumber')?.value;
+      if (momoNumber && momoNumber.trim()) {
+        showToast('Payout number saved successfully!', 'success');
+      } else {
+        showToast('Please enter a valid Mobile Money number.', 'error');
+      }
     });
   }
 }
